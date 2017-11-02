@@ -8,9 +8,9 @@ Explore
  @Xavierluijer
  Sign out
  Watch 0
-  Star 0  Fork 0 Emailvalidaiton-fr/Emailvalidation-CSharp
+  Star 0  Fork 0 Emaillistvalidation-fr/Emaillistvalidation-CSharp
  Code  Issues 0  Pull requests 0  Projects 0  Wiki  Insights
-Branch: master Find file Copy pathEmailvalidation-CSharp/Program.cs
+Branch: master Find file Copy pathEmaillistvalidation-CSharp/Program.cs
 0091b9a  on 16 Aug 2016
 @nnme nnme init
 1 contributor
@@ -59,7 +59,7 @@ namespace ConsoleApplication1
         {
             string key = "PUT YOUR KEY HERE";
             string email = "emailtoverify@example.com";
-            string sURL = "https://app.emailvalidation.fr/api/verifEmail?secret=" + key + "&email=" + email;
+            string sURL = "https://app.emaillistvalidation.com/api/verifEmail?secret=" + key + "&email=" + email;
             WebRequest wrGETURL;
             wrGETURL = WebRequest.Create(sURL);
 
@@ -91,7 +91,7 @@ namespace ConsoleApplication1
         private static void CheckFileStatus(string id)
         {
             string key = "PUT YOUR KEY HERE";
-            string sURL = "https://app.emailvalidation.fr/api/getApiFileInfo?secret=" + key + "&id=" + id;
+            string sURL = "https://app.emaillistvalidation.com/api/getApiFileInfo?secret=" + key + "&id=" + id;
             WebRequest wrGETURL;
             wrGETURL = WebRequest.Create(sURL);
 
@@ -131,7 +131,7 @@ namespace ConsoleApplication1
             string key = "PUT YOUR KEY HERE";
             
             string file_contents = "c:\\php\\emails.txt";
-            string url = "https://app.emailvalidation.fr/api/verifApiFile?secret=" + key + "&filename=my_emails.txt";            
+            string url = "https://app.emaillistvalidation.com/api/verifApiFile?secret=" + key + "&filename=my_emails.txt";            
             
             string boundary = "----------------------------" + DateTime.Now.Ticks.ToString("x");
 
